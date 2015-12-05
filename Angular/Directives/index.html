@@ -8,7 +8,14 @@
 </head>
 <body style="background: lightgreen" ng-app="playDirectives" ng-controller="playDirectives">
 	<h1>Angular Directives</h1>
-	<h3>{{customer}}</h3>
 	<h5 my-customer></h3>
+	<my-customer-template-url type="1"></my-customer-template-url>
+	<h6 my-customer-template-url type="2"></h6>
+	<my-customer-info data="customer"></my-customer-info>
+	<h2>Fancy Counter</h2> <br/>
+	Start: <input ng-model="start" type="number"/> 	
+	Delay: <input ng-model="delay" type="number"/>
+	<h5 counter start="start" delay="delay">{{customer.name}}</h5>
+	<in-page-dialog on-update="update(custName, custAge)"></in-page-dialog>
 </body>
 </html>
