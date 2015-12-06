@@ -1,0 +1,8 @@
+<div>
+  <ul class="nav nav-tabs">
+    <li ng-repeat="planet in planets">
+      <a href="" ng-click="highlight(planet)">{{planet.name}}</a>
+    </li>
+  </ul>
+  <div class="tab-content" ng-transclude></div>
+</div>
